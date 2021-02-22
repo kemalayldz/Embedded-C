@@ -1,0 +1,32 @@
+23:20:23 **** Incremental Build of configuration Debug for project 011_ArraySwap ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:13:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("Array swapping program\n");
+  ^~~~~~
+..\main.c:13:2: warning: incompatible implicit declaration of built-in function 'printf'
+..\main.c:13:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\main.c:15:2: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+  scanf("%d %d", &size1, &size2);
+  ^~~~~
+..\main.c:15:2: warning: incompatible implicit declaration of built-in function 'scanf'
+..\main.c:15:2: note: include '<stdio.h>' or provide a declaration of 'scanf'
+..\main.c:48:8: warning: implicit declaration of function 'getchar' [-Wimplicit-function-declaration]
+  while(getchar()=='\n'){
+        ^~~~~~~
+..\main.c: In function 'swap_arrays':
+..\main.c:59:2: warning: incompatible implicit declaration of built-in function 'printf'
+  printf("\nContents of array after swap:\n");
+  ^~~~~~
+..\main.c:59:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\main.c:66:13: warning: statement with no effect [-Wunused-value]
+   pArray1[i]==pArray2[i];
+   ~~~~~~~~~~^~~~~~~~~~~~
+..\main.c:67:13: warning: statement with no effect [-Wunused-value]
+   pArray2[i]==temp;
+   ~~~~~~~~~~^~~~~~
+gcc -o 011_ArraySwap.exe main.o 
+
+23:20:23 Build Finished. 0 errors, 8 warnings. (took 302ms)
+

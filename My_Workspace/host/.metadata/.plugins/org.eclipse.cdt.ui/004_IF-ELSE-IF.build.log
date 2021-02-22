@@ -1,0 +1,20 @@
+14:36:16 **** Incremental Build of configuration Debug for project 004_IF-ELSE-IF ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:10: warning: '0' flag ignored with precision and '%d' ms_printf format [-Wformat=]
+   printf("Your total tax is %0.4d", tax);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c:23:10: warning: '0' flag ignored with precision and '%d' ms_printf format [-Wformat=]
+   printf("Your total tax is %0.4d", tax);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c:26:10: warning: '0' flag ignored with precision and '%d' ms_printf format [-Wformat=]
+   printf("Your total tax is %0.4d", tax);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\main.c:29:10: warning: '0' flag ignored with precision and '%d' ms_printf format [-Wformat=]
+   printf("Your total tax is %0.4d", tax);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o 004_IF-ELSE-IF.exe main.o 
+
+14:36:17 Build Finished. 0 errors, 4 warnings. (took 353ms)
+

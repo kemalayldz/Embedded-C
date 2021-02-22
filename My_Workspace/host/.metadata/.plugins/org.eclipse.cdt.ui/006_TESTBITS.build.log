@@ -1,0 +1,11 @@
+17:15:16 **** Incremental Build of configuration Debug for project 006_TESTBITS ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:11:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'uint8_t * {aka unsigned char *}' [-Wformat=]
+  scanf("%d",&num);
+          ^
+gcc -o 006_TESTBITS.exe main.o 
+
+17:15:16 Build Finished. 0 errors, 1 warnings. (took 346ms)
+

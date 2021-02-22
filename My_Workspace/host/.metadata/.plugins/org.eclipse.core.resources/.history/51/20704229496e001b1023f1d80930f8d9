@@ -1,0 +1,56 @@
+#include "main.h"
+#include <stdio.h>
+
+
+STUDENT_INFO_t students[10];
+
+int main(){
+
+	int enternum;
+	printf("Student record management program\n");
+	printf("Display all records --> 1\n");
+	printf("Add new record      --> 2\n");
+	printf("Delete a record     --> 3\n");
+	printf("Exit application     --> 4\n");
+	scanf("%d", &enternum);
+
+	switch(enternum){
+
+	case 1:
+		display_records();
+		break;
+	case 2:
+		add_record();
+		break;
+	case 3:
+		delete_record();
+		break;
+	case 4:
+		exit_app();
+		break;
+	}
+
+
+	return 0;
+
+}
+
+void display_records(){
+	printf("Displaying all the records...\n");
+
+	for(int i=0; i<10; i++){
+		printf("********\n");
+		printf("rollNumber        : %d", students[i].rollNumber);
+		printf("studentSemister   : %d", students[i].semister);
+		printf("studentDOB        : %s", students[i].dob);
+		printf("studentBranch     : %s", students[i].branch);
+		printf("studentName       : %s", students[i].name);
+
+
+	}
+
+}
+void add_record(){
+
+
+}

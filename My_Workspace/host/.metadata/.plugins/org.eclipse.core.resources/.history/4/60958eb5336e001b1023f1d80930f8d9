@@ -1,0 +1,80 @@
+#include <stdint.h>
+
+
+
+void swap_arrays(const *const pArray1, const *const *pArray2, sizeArray1, sizeArray2);
+
+int main(){
+
+	uint8_t size1, size2;
+
+
+
+	printf("Array swapping program\n");
+	printf("Enter the no of elements of Array-1 and Array-2:");
+	scanf("%u", &size1);
+	scanf("%u", &size2);
+	uint8_t array1[size1], array2[size2];
+
+	for(uint32_t i=0; i<= size1; i++){
+
+		printf("Enter the element %d of Array-1: ");
+		scanf("%d", &array1[i]);
+	}
+	for(uint32_t j=0; j<= size1; j++){
+
+		printf("Enter the element %d of Array-2: ");
+		scanf("%d", &array2[j]);
+	}
+
+
+	swap_arrays(&array1, &array2,size1,size2);
+	printf("Contents of array before swap:\n");
+	for(uint32_t k=0; k<sizeArray1; k++){
+			printf("%d",array1[k]);
+
+		}
+	printf("\n");
+
+	for(uint32_t x=0; x<sizeArray2; x++){
+
+		printf("%d",array2[x]);
+
+		}
+
+
+	return 0;
+
+
+}
+
+void swap_arrays(const *const pArray1, const *const pArray2, uint32_t sizeArray1, uint32_t sizeArray2){
+	printf("Contents of array after swap:\n");
+	if(sizeArray1>sizeArray2){
+
+		for(uint32_t i=0; i<=sizeArray1;i++ ){
+
+			pArray1[i]=pArray2[i];
+		}
+
+		}else{
+		for(uint32_t j=0; j<=sizeArray2;i++ ){
+
+			pArray2[j]=pArray1[j];
+	}
+
+	for(uint32_t k=0; k<sizeArray1; k++){
+
+		printf("%d",pArray2[k]);
+
+	}
+	printf("\n");
+
+	for(uint32_t x=0; x<sizeArray2; x++){
+
+		printf("%d",pArray1[x]);
+
+		}
+}
+
+

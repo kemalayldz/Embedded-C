@@ -1,0 +1,39 @@
+23:18:21 **** Incremental Build of configuration Debug for project 021_task_scheduler ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:26:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+    ^~~~~~~
+../Src/main.c:38:1: warning: 'nacked' attribute directive ignored [-Wattributes]
+ __attribute ((nacked)) void switch_sp_to_psp(void);
+ ^~~~~~~~~~~
+../Src/main.c:40:1: warning: 'nacked' attribute directive ignored [-Wattributes]
+ __attribute((nacked)) void SysTick_Handler(void);
+ ^~~~~~~~~~~
+../Src/main.c:164:1: warning: 'nacked' attribute directive ignored [-Wattributes]
+ __attribute ((nacked)) void switch_sp_to_psp(void){
+ ^~~~~~~~~~~
+../Src/main.c:178:1: warning: 'nacked' attribute directive ignored [-Wattributes]
+ __attribute((nacked)) void SysTick_Handler(void){
+ ^~~~~~~~~~~
+arm-none-eabi-gcc -o "021_task_scheduler.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Embedded_C\My_Workspace\target\021_task_scheduler\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="021_task_scheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 021_task_scheduler.elf
+ 
+arm-none-eabi-objdump -h -S  021_task_scheduler.elf  > "021_task_scheduler.list"
+arm-none-eabi-objcopy  -O binary  021_task_scheduler.elf  "021_task_scheduler.bin"
+arm-none-eabi-size   021_task_scheduler.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4188	    124	   1604	   5916	   171c	021_task_scheduler.elf
+Finished building: default.size.stdout
+ 
+Finished building: 021_task_scheduler.bin
+Finished building: 021_task_scheduler.list
+ 
+ 
+23:18:23 **** Incremental Build of configuration Debug for project 021_task_scheduler ****
+make -j12 all 
+arm-none-eabi-size   021_task_scheduler.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4188	    124	   1604	   5916	   171c	021_task_scheduler.elf
+Finished building: default.size.stdout
+ 

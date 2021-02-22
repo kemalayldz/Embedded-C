@@ -1,0 +1,7 @@
+23:32:20 **** Incremental Build of configuration Debug for project 002_FloatPrice ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o 002_FloatPrice.exe ".metadata\\.plugins\\org.eclipse.cdt.make.core\\specs.o" ".metadata\\.plugins\\org.eclipse.cdt.managedbuilder.core\\spec.o" main.o 
+
+23:32:20 Build Finished. 0 errors, 0 warnings. (took 318ms)
+

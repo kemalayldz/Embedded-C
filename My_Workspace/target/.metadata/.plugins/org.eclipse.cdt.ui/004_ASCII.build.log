@@ -1,0 +1,7 @@
+00:11:31 **** Incremental Build of configuration Debug for project 004_ASCII ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o 004_ASCII.exe main.o 
+
+00:11:31 Build Finished. 0 errors, 0 warnings. (took 355ms)
+

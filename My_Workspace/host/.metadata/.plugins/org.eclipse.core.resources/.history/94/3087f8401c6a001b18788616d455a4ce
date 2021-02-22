@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdint.h>
+
+void wait_for_user_input();
+int main(){
+
+
+	uint8_t height, count;
+
+	printf("Enter the height of the pyramid:");
+	scanf("%d",&height);
+
+	for(count=0 ; height >= count; height--){
+
+		printf("%d\n", height);
+	}
+
+	wait_for_user_input();
+}
+void wait_for_user_input(){
+
+	while(getchar() != '\n'){
+
+
+
+		}
+
+		getchar();
+}

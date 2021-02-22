@@ -1,0 +1,26 @@
+23:56:50 **** Incremental Build of configuration Debug for project 016_SP_MSP_PSP ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'SVC_Handler':
+../Src/main.c:57:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("in SVC Handler");
+  ^~~~~~
+../Src/main.c:57:2: warning: incompatible implicit declaration of built-in function 'printf'
+../Src/main.c:57:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "016_SP_MSP_PSP.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Embedded_C\My_Workspace\target\016_SP_MSP_PSP\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="016_SP_MSP_PSP.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 016_SP_MSP_PSP.elf
+ 
+arm-none-eabi-size   016_SP_MSP_PSP.elf 
+arm-none-eabi-objdump -h -S  016_SP_MSP_PSP.elf  > "016_SP_MSP_PSP.list"
+arm-none-eabi-objcopy  -O binary  016_SP_MSP_PSP.elf  "016_SP_MSP_PSP.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4932	    108	   1580	   6620	   19dc	016_SP_MSP_PSP.elf
+Finished building: default.size.stdout
+ 
+Finished building: 016_SP_MSP_PSP.bin
+Finished building: 016_SP_MSP_PSP.list
+ 
+ 
+
+23:56:52 Build Finished. 0 errors, 2 warnings. (took 1s.38ms)
+

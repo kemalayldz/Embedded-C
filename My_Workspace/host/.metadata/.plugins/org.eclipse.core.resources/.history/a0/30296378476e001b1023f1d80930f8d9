@@ -1,0 +1,25 @@
+/*
+ * main.h
+ *
+ *  Created on: Feb 14, 2021
+ *      Author: Kemal
+ */
+
+
+#include <stdio.h>
+#ifndef MAIN_H_
+#define MAIN_H_
+
+
+typedef struct{
+
+	int rollNumber;
+	int semister;
+	char name[30];
+	char branch[50];
+	char dob[15];
+
+}STUDENT_INFO_t;
+
+
+#endif /* MAIN_H_ */

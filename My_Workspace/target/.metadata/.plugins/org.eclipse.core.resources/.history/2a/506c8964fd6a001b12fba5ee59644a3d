@@ -1,0 +1,32 @@
+
+
+#include <stdint.h>
+
+
+typedef struct{
+	uint32_t *pClkCtrlReg = (uint32_t*) (0x40023800+0x30);
+
+
+}RCC_AHB1ENR_t;
+
+
+typedef struct{
+	uint32_t *pModeDReg = (uint32_t*) 0x40020C00;
+
+
+}GPIOD_MODE_t;
+
+typedef struct{
+	uint32_t *pDOutReg = (uint32_t*) 0x40020C14;
+
+
+}GPIOD_ODR_t;
+
+
+
+
+
+int main(void)
+{
+
+}

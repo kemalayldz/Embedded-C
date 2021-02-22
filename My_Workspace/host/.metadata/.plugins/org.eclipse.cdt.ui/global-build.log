@@ -1,0 +1,57 @@
+01:28:20 **** Incremental Build of configuration Debug for project 012_StringExercise ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:20:3: warning: implicit declaration of function 'display_records' [-Wimplicit-function-declaration]
+   display_records();
+   ^~~~~~~~~~~~~~~
+..\main.c:23:3: warning: implicit declaration of function 'add_record' [-Wimplicit-function-declaration]
+   add_record();
+   ^~~~~~~~~~
+..\main.c: At top level:
+..\main.c:43:6: warning: conflicting types for 'display_records'
+ void display_records(){
+      ^~~~~~~~~~~~~~~
+..\main.c:20:3: note: previous implicit declaration of 'display_records' was here
+   display_records();
+   ^~~~~~~~~~~~~~~
+..\main.c:58:6: warning: conflicting types for 'add_record'
+ void add_record(){
+      ^~~~~~~~~~
+..\main.c:23:3: note: previous implicit declaration of 'add_record' was here
+   add_record();
+   ^~~~~~~~~~
+..\main.c: In function 'add_record':
+..\main.c:65:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'long int *' [-Wformat=]
+  scanf("%d",&rollnum);
+          ^
+..\main.c:67:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'long int *' [-Wformat=]
+  scanf("%d",&semester);
+          ^
+..\main.c:69:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[15]' [-Wformat=]
+  scanf("%s",&dob);
+          ^
+..\main.c:71:14: warning: format '%[^
+   ' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+  scanf("%50[^\n]s",&branch);
+              ^
+..\main.c:74:14: warning: format '%[^
+   ' expects argument of type 'char *', but argument 2 has type 'char (*)[30]' [-Wformat=]
+  scanf("%50[^\n]s",&name);
+              ^
+..\main.c:80:26: warning: statement with no effect [-Wunused-value]
+    students[i].rollNumber==rollnum;
+    ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+..\main.c:81:24: warning: statement with no effect [-Wunused-value]
+    students[i].semister==semester;
+    ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+..\main.c:82:20: warning: statement with no effect [-Wunused-value]
+    students[i].dob == dob;
+    ~~~~~~~~~~~~~~~~^~~~~~
+..\main.c:83:23: warning: statement with no effect [-Wunused-value]
+    students[i].branch == branch;
+    ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+..\main.c:84:21: warning: statement with no effect [-Wunused-value]
+    students[i].name == name;
+    ~~~~~~~~~~~~~~~~~^~~~~~~
+gcc -o 012_StringExercise.exe main.o 

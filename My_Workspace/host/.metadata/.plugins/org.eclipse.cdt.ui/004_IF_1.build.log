@@ -1,0 +1,7 @@
+00:51:33 **** Incremental Build of configuration Debug for project 004_IF_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o 004_IF_1.exe main.o 
+
+00:51:33 Build Finished. 0 errors, 0 warnings. (took 310ms)
+
